@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/posts-and-comments/static/css/main.010facfd.css",
+    "main.js": "/posts-and-comments/static/js/main.e185edfc.js",
+    "index.html": "/posts-and-comments/index.html",
+    "main.010facfd.css.map": "/posts-and-comments/static/css/main.010facfd.css.map",
+    "main.e185edfc.js.map": "/posts-and-comments/static/js/main.e185edfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.010facfd.css",
+    "static/js/main.e185edfc.js"
+  ]
+}
