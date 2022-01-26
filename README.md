@@ -10,8 +10,6 @@
 
 ## `Installation and Setup Instructions`
 
----
-
 - You will need node and npm installed globally on your machine.
 
 - Clone this project repository -[https://github.com/Sruthisreem/posts-and-comments.git](https://github.com/Sruthisreem/posts-and-comments.git)
@@ -30,8 +28,6 @@
 
 ## `Technologies`
 
----
-
 A list of technologies used within the project:
 
 - React JS - The React code is easier to maintain and is flexible due to its modular structure. Virtual DOM provides a more efficient way of updating the view in a web application and it provides an increased performance.
@@ -42,8 +38,6 @@ A list of technologies used within the project:
 - JSONPlaceholder - REST API used for retriving data to be shown in the application
 
 ## `Approach and Task List`
-
----
 
 This Application shows list of posts and on selecting the post its comments are listed and we can add reply as a comment in comment section. In a new comment a tag suggestion will be given to the user to add multiple tags in comment. The posts in the application can be filtered by username.
 
