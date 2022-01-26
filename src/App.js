@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Layout from "./components/layout/Layout.Component";
+import Container from "react-bootstrap/Container";
 
-function App() {
+import "./App.css";
+import PostList from "./components/posts/postList/PostList.Component";
+import CommentList from "./components/comments/commentList/CommentList.Component";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Container>
+          <Row>
+            <Col xs="12" md="6">
+              <PostList />
+            </Col>
+            <Col xs="12" md="6">
+              <CommentList />
+            </Col>
+          </Row>
+        </Container>
+      </Layout>
     </div>
   );
 }
-
-export default App;

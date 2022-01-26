@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# `Posts And Comments`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## An application displays lists of posts on the left side. On selecting a post, comments for the post will be listed on the right side. User can reply to the comments in the new comment section below the comment list and user will have tag suggestions while typing and can add one or more tags to comments. User can also filter the posts with respect to username
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+### `Deployed Application URL`
 
-### `npm start`
+[https://Sruthisreem.github.io/posts-and-comments/](https://Sruthisreem.github.io/posts-and-comments/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## `Installation and Setup Instructions`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+- You will need node and npm installed globally on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this project repository -[https://github.com/Sruthisreem/posts-and-comments.git](https://github.com/Sruthisreem/posts-and-comments.git)
 
-### `npm run build`
+  ```
+  git clone https://github.com/Sruthisreem/posts-and-comments.git
+  ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `Installation`: npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `To Run Test Suite` : npm test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `To Start Server` : npm start
 
-### `npm run eject`
+- `To Visit App` : http://localhost:3000/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## `Technologies`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+A list of technologies used within the project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React JS - The React code is easier to maintain and is flexible due to its modular structure. Virtual DOM provides a more efficient way of updating the view in a web application and it provides an increased performance.
+- Create React App - This helps to create and configure a react project easily. This has Babel and Webpack configuration for you to run and deploy your project.
+- React Hooks - Hooks in React allows you to add state to functional components and have more modular and readable code.
+- Redux Tool kit - easier to write good Redux applications and speeds up development and allowing you to write simpler and maintanable code.
+- Bootstrap - Extensive list of components and Bundled Javascript plugins.
+- JSONPlaceholder - REST API used for retriving data to be shown in the application
 
-## Learn More
+## `Approach and Task List`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This Application shows list of posts and on selecting the post its comments are listed and we can add reply as a comment in comment section. In a new comment a tag suggestion will be given to the user to add multiple tags in comment. The posts in the application can be filtered by username.
 
-### Code Splitting
+I started this process by using the create-react-app boilerplate, then adding react-autocomplete-tag, react-bootstrap and Redux Tool kit dependencies to the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+First started with creating UI, then divided the container and took the left section and created the post Item, which shows a content such as title, content and username. Then a post List component is created which will render the post Items with respect to the posts. Then a post filter component is created to filter the posts based on value entered on filter component.
 
-### Analyzing the Bundle Size
+Once the left portion was completed, for right side I started with the new comment component and integrated the React Tag Autocomplete library to the component to use the add tag with suggestion feature.Then a comment Item component is created for displaying the comment of the post.Comment List component is created which will render comment Items and add new comment component at the bottom.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Created a loading component for handling loading state of the application.
 
-### Making a Progressive Web App
+Once the UI was done, started with creating a store and then provide redux store to react. Created 4 slices of store, for comments, posts, tags and users with reducer functions for differnt actions. The actions that are exported are used to call async functions.
+The api files are created for each comments, users and post for data fetching and creating a new resource.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Task List                                                             | Time Spend |
+| --------------------------------------------------------------------- | ---------- |
+| Project requirement analysis and identifying dependencies             | 45 mins    |
+| Created project with create react app and dependencies                | 30 mins    |
+| Created Layout component                                              | 20 mins    |
+| Created Post Item Component                                           | 30 mins    |
+| Created Posts List component                                          | 30 mins    |
+| Created Post filter component for filter the posts based on user name | 45 mins    |
+| Created New Comment component with auto tag component                 | 60 mins    |
+| Created Comment Item component to display comment                     | 60 mins    |
+| Created test case for Comment Item component                          | 30 mins    |
+| Created Comment List component to display list of component Item      | 45 mins    |
+| Created Loading component                                             | 30 mins    |
+| Created 4 slices of store for posts, comments, users and tags         | 90 mins    |
+| Created action files for asyc function calls                          | 50 mins    |
+| Created api files for fetching data                                   | 60 mins    |
+| Integrated the data with all the components                           | 120 mins   |
+| Created readme with project documentation and setup information       | 90 mins    |
 
-### Advanced Configuration
+## `Additional Information`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- To view the tag suggestion user needs start typing in the field word/character below. Once a new comment is added by the user with custom tag, then that tag will be added in the suggestion list for the next add comment component.\
+  2022,Billing,AWS,Google,Google,Cloud,Amazon,Apple,iPhone,Android,React,ReactJs,VanillaJs,Redux,Bootstrap
+- Used react-tag-autocomplete library for tag suggestion component.
