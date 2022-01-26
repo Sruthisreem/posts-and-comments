@@ -2,8 +2,6 @@
 
 ## An application displays lists of posts on the left side. On selecting a post, comments for the post will be listed on the right side. User can reply to the comments in the new comment section below the comment list and user will have tag suggestions while typing and can add one or more tags to comments. User can also filter the posts with respect to username
 
-<br>
-
 ### `Deployed Application URL`
 
 [https://Sruthisreem.github.io/posts-and-comments/](https://Sruthisreem.github.io/posts-and-comments/)
